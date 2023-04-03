@@ -1,4 +1,4 @@
-package eu.tutorials.quizapp
+package com.example.quizapp
 
 import com.example.quizapp.R
 
