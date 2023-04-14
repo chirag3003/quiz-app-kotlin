@@ -11,7 +11,6 @@ class ResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
 
-       //Todo: connect to each view in the layout through its id
         val tvName: TextView = findViewById(R.id.tv_name)
         val tvScore:TextView = findViewById(R.id.tv_score)
         val btnFinish:Button = findViewById(R.id.btn_finish)
@@ -25,7 +24,6 @@ class ResultActivity : AppCompatActivity() {
         tvScore.text = "Your Score is $correctAnswers out of $totalQuestions."
 
         btnFinish.setOnClickListener {
-            //
             startActivity(Intent(this@ResultActivity, MainActivity::class.java))
             finish()
         }
